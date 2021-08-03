@@ -1,0 +1,29 @@
+.cities {
+  text-align: center;
+}
+
+.city {
+  border: 2px solid black;
+}
+
+form {
+  text-align: center;
+  font-size: large;
+}
+
+.current-city {
+  border: 2px solid black;
+  font-size: 20px;
+  /* height: 50px; */
+}
+.weather {
+  border: 2px solid black;
+}
+.time {
+  border: 2px solid black;
+  padding: 50px;
+}
+
+.forcast {
+  border: 2px solid black;
+}

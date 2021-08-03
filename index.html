@@ -1,0 +1,109 @@
+...
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- <script
+      src="https://kit.fontawesome.com/445ccf0a1b.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>wireframe</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row cities mt-5">
+        <div class="col-4 city">
+          paris
+          <br />
+          temperture:10 c
+        </div>
+        <div class="col-4 city">
+          lisbon
+          <br />
+          temperture: 0 c
+        </div>
+        <div class="col-4 city">
+          dubai
+          <br />
+          temperture: 50 c
+        </div>
+      </div>
+      <div class="row mt-5">
+        <form>
+          <input type="text" id="search" placeholder="Search.." name="search" />
+          <button type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <h1>current city</h1>
+          <div class="row current-city mt-5" id="input-city">dubai</div>
+          <div class="row weather mt-5">
+            <p>weather temp:</p>
+            <!-- <span class="col-1"><a id="fahrenheit">f</a></span>
+            <span class="col-1">|</span>
+            <span class="col-1"><a id="celsius">c</a></span> -->
+
+            <p id="current-temp">17</p>
+          </div>
+          <div class="row mt-5">
+            <button id="location-btn">show my city and temp</button>
+            <div id="my-city-temp"></div>
+          </div>
+          <div class="row time mt-5">
+            time: 5pm
+            <br />
+            20/11/2021
+          </div>
+        </div>
+        <div class="col-6">
+          <h1>forecast for the next 5 days:</h1>
+          <div class="forcast mt-5">
+            friday:
+            <br />
+            🌤
+          </div>
+          <div class="forcast mt-4">
+            sat:
+            <br />
+            ⛅️
+          </div>
+          <div class="forcast mt-4">
+            sunday:
+            <br />
+            🌥
+          </div>
+          <div class="forcast mt-4">
+            monday:
+            <br />
+            ☁️
+          </div>
+          <div class="forcast mt-4">
+            tuesday:
+            <br />
+            ☀️
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="src/index.js"></script> -->
+    <!-- <script src="src/search.js"></script> -->
+    <script src="src/searchForm.js"></script>
+    <script src="src/gps.js"></script>
+    <script src="src/time.js"></script>
+    <!-- <script src="src/convertDegree.js"></script> -->
+  </body>
+</html>
