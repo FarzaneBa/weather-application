@@ -3,9 +3,10 @@ function showTemp(response) {
   console.log(response.data.list[0].name);
   let inputCity = document.querySelector("#input-city");
   inputCity.innerHTML = `${response.data.list[0].name}`;
-  let tempture = response.data.list[0].main.temp;
+  let tempture = Math.round(response.data.list[0].main.temp);
+  console.log(tempture);
   let currentTemp = document.querySelector("#current-temp");
-  currentTemp.innerHTML = `current temp:${tempture - 273.15}`;
+  currentTemp.innerHTML = `current temp:${tempture}`;
 }
 
 function searchCity(event) {
