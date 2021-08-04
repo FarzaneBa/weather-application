@@ -1,5 +1,5 @@
 function showCityAndTemp(response) {
-  let myTemp = Math.round(response.data.main.temp - 273.15);
+  let myTemp = Math.round(response.data.main.temp - 273);
   let myCity = response.data.name;
   let showResult = document.querySelector("#my-city-temp");
   showResult.innerHTML = `You are at ${myCity} and temputure is: ${myTemp}`;
