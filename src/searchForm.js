@@ -5,7 +5,7 @@ function showTemp(response) {
   inputCity.innerHTML = `${response.data.list[0].name}`;
   let tempture = response.data.list[0].main.temp;
   let currentTemp = document.querySelector("#current-temp");
-  currentTemp.innerHTML = `current temp:${tempture}`;
+  currentTemp.innerHTML = `current temp:${tempture - 273.15}`;
 }
 
 function searchCity(event) {
