@@ -2,7 +2,7 @@ function showCityAndTemp(response) {
   let myTemp = Math.round(response.data.main.temp - 273);
   let myCity = response.data.name;
   let showResult = document.querySelector("#my-city-temp");
-  showResult.innerHTML = `You are at ${myCity} and temputure is: ${myTemp}`;
+  showResult.innerHTML = `You are at ${myCity} and temputure is: ${myTemp}°C`;
 }
 
 function showLocation(position) {
