@@ -3,7 +3,7 @@ function showTemp(response) {
   console.log(response.data.list[0].name);
   let inputCity = document.querySelector("#input-city");
   inputCity.innerHTML = `${response.data.list[0].name}`;
-  let tempture = Math.round(response.data.list[0].main.temp);
+  let tempture = Math.round(response.data.list[0].main.temp - 273.15);
   console.log(tempture);
   let currentTemp = document.querySelector("#current-temp");
   currentTemp.innerHTML = `current temp:${tempture}`;
